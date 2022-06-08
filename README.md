@@ -2,11 +2,13 @@
 
 Useful primitives for class based Json Schema Validation package [json](https://github.com/cmkweber/json).
 
+
 ## Description
 
 Common primitives are provided such as JsonDate, JsonEmail, and JsonUrl, that are not considered strict json.
 The interface uses common types such as Date but serializes to strict json as a number.
 For more details see [json](https://github.com/cmkweber/json).
+
 
 ## Usage
 
