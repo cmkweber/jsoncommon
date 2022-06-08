@@ -1,4 +1,4 @@
-# Jsoncommon
+# jsoncommon
 
 Useful primitives for class based Json Schema Validation package [json](https://github.com/cmkweber/json).
 
