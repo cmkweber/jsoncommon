@@ -7,6 +7,10 @@ export class JsonDate extends JsonRequired<Date, number>
 	// Date constructor
 	constructor(readonly min?:Date, readonly max?:Date, value?:Date)
 	{
+		// If a minimum and maximum were specified, and theyre invalid, throw error
+		if(min !== undefined && max !== undefined && min.valueOf() > max.valueOf())
+			throw new Error('Invalid range');
+
 		// Call creation on json
 		super(value !== undefined ? value : new Date());
 
