@@ -5,7 +5,7 @@ import {JsonRequired} from 'json';
 export class JsonDate extends JsonRequired<Date, number>
 {
 	// Date constructor
-	constructor(readonly min?:Date, readonly max?:Date, value?:Date)
+	constructor(readonly milliseconds:boolean = true, readonly min?:Date, readonly max?:Date, value?:Date)
 	{
 		// If a minimum and maximum were specified, and theyre invalid, throw error
 		if(min !== undefined && max !== undefined && min.valueOf() > max.valueOf())
@@ -49,10 +49,10 @@ export class JsonDate extends JsonRequired<Date, number>
 				throw new Error('Invalid date');
 
 			// Set the specified value
-			this.set(new Date(value));
+			this.set(new Date(this.milliseconds ? value : value * 1000));
 		}
 	}
 
 	// Function to serialize the dates value
-	serialize():number { return this.value.valueOf(); }
+	serialize():number { return this.milliseconds ? this.value.valueOf() : Math.floor(this.value.valueOf() / 1000); }
 }

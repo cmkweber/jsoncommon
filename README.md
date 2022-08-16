@@ -20,6 +20,7 @@ Instantiate or extend from one of the provided json primitives.
 
 ```typescript
 new JsonDate(
+	milliseconds:boolean, // Milliseconds or seconds
 	min?:Date, // Minimum date value
 	max?:Date, // Maximum date value
 	value?:Date // Default value
