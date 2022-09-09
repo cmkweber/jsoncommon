@@ -16,6 +16,15 @@ For more details see [json](https://github.com/cmkweber/json).
 
 Instantiate or extend from one of the provided json primitives.
 
+### JsonCurrency
+
+```typescript
+new JsonCurrency(
+	lowercase:boolean, // Lowercase currency
+	value?:Currency // Default value
+);
+```
+
 ### JsonDate
 
 ```typescript
