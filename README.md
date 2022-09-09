@@ -17,7 +17,7 @@ For more details see [json](https://github.com/cmkweber/json).
 Instantiate or extend from one of the provided json primitives.
 
 ### JsonCurrency
-Enumeration that resolves to a ISO 4217 currency.
+Enumeration that resolves to an ISO 4217 currency.
 
 ```typescript
 new JsonCurrency(
