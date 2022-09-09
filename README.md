@@ -17,6 +17,7 @@ For more details see [json](https://github.com/cmkweber/json).
 Instantiate or extend from one of the provided json primitives.
 
 ### JsonCurrency
+Enumeration that resolves to a ISO 4217 currency.
 
 ```typescript
 new JsonCurrency(
@@ -26,6 +27,7 @@ new JsonCurrency(
 ```
 
 ### JsonDate
+Date that serializes to the amount of elapsed time since the Unix epoch.
 
 ```typescript
 new JsonDate(
@@ -37,6 +39,7 @@ new JsonDate(
 ```
 
 ### JsonEmail
+Regular expression that validates against the majority of valid email inputs.
 
 ```typescript
 new JsonEmail(
@@ -44,7 +47,19 @@ new JsonEmail(
 );
 ```
 
+### JsonTimestamp
+Date that serializes to an ISO 8601 time string.
+
+```typescript
+new JsonTimestamp(
+	min?:Date, // Minimum date value
+	max?:Date, // Maximum date value
+	value?:Date // Default value
+);
+```
+
 ### JsonUrl
+Utilizes URL for validation of url inputs.
 
 ```typescript
 new JsonUrl(
