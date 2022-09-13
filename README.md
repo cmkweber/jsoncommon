@@ -8,6 +8,7 @@ Useful primitives for class based Json Schema Validation package [json](https://
 
 Common primitives are provided such as JsonDate, JsonEmail, and JsonUrl, that are not considered strict json.
 The interface uses common types such as Date but serializes to strict json as a number.
+Additionally, included are common enumerations representing international formats such as County codes and Currencies.
 For more details see [json](https://github.com/cmkweber/json).
 <br/>
 <br/>
@@ -15,6 +16,16 @@ For more details see [json](https://github.com/cmkweber/json).
 ## Usage
 
 Instantiate or extend from one of the provided json primitives.
+
+### JsonCountry
+Enumeration that resolves to an ISO 3166-1 alpha-2 country code.
+
+```typescript
+new JsonCountry(
+	lowercase:boolean, // Lowercase country
+	value?:Country // Default value
+);
+```
 
 ### JsonCurrency
 Enumeration that resolves to an ISO 4217 currency.

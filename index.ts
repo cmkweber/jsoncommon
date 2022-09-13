@@ -1,4 +1,5 @@
 // Package exports
+export {JsonCountry} from './dist/Country';
 export {JsonCurrency} from './dist/Currency';
 export {JsonDate} from './dist/Date';
 export {JsonEmail} from './dist/Email';
