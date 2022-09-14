@@ -58,6 +58,16 @@ new JsonEmail(
 );
 ```
 
+### JsonState
+Enumeration that resolves to an ISO_3166-2:US subdivision code.
+
+```typescript
+new JsonState(
+	lowercase:boolean, // Lowercase state
+	value?:Country // Default value
+);
+```
+
 ### JsonTimestamp
 Date that serializes to an ISO 8601 time string.
 
