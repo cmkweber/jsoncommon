@@ -59,7 +59,7 @@ new JsonEmail(
 ```
 
 ### JsonState
-Enumeration that resolves to an ISO_3166-2:US subdivision code.
+Enumeration that resolves to an ISO 3166-2:US subdivision code.
 
 ```typescript
 new JsonState(
